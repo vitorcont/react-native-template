@@ -1,1 +1,1 @@
-# react-native-template
+# Author: Vítor Conti
