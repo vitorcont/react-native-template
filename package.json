@@ -8,16 +8,22 @@
         "start": "react-native start",
         "test": "jest",
         "apk": "yarn postinstall && npx react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res && cd android/ && ./gradlew clean && ./gradlew app:assembleRelease -x bundleReleaseJsAndAssets",
-        "clean-install": "rm -rf node_modules && yarn cache clean && yarn",
+        "clean-install": "rm -rf node_modules && yarn cache clean && yarn install",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "commit": "git-cz",
         "postinstall": "npx patch-package"
     },
     "dependencies": {
+        "@react-navigation/native": "^6.0.8",
+        "@react-navigation/stack": "^6.1.1",
+        "luxon": "^2.3.0",
         "react": "17.0.2",
         "react-native": "0.67.2",
         "react-native-i18n": "^2.0.15",
-        "styled-components": "^5.3.3"
+        "react-native-image-picker": "^4.7.3",
+        "react-native-sensitive-info": "^6.0.0-alpha.9",
+        "styled-components": "^5.3.3",
+        "vanilla-masker": "^1.2.0"
     },
     "devDependencies": {
         "@babel/core": "^7.12.9",
