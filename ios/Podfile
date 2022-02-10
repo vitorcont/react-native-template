@@ -12,6 +12,8 @@ target 'templateProject' do
     :hermes_enabled => false
   )
 
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
   target 'templateProjectTests' do
     inherit! :complete
     # Pods for testing
