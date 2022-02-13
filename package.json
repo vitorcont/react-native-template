@@ -16,12 +16,17 @@
     "dependencies": {
         "@react-navigation/native": "^6.0.8",
         "@react-navigation/stack": "^6.1.1",
+        "@types/react-redux": "^7.1.22",
+        "axios": "^0.26.0",
         "luxon": "^2.3.0",
         "react": "17.0.2",
         "react-native": "0.67.2",
+        "react-native-config": "^1.4.5",
         "react-native-i18n": "^2.0.15",
         "react-native-image-picker": "^4.7.3",
         "react-native-sensitive-info": "^6.0.0-alpha.9",
+        "react-redux": "^7.2.6",
+        "redux-thunk": "^2.4.1",
         "styled-components": "^5.3.3",
         "vanilla-masker": "^1.2.0"
     },
