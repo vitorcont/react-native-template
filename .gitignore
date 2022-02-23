@@ -92,3 +92,6 @@ Thumbs.db
 *.app
 *.exe
 *.war
+
+# Sensitive Information
+.env

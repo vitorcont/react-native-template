@@ -13,7 +13,7 @@ export const setItem = async (key: StorageItems, value: any) => {
 
 export const setAuthTokens = async (
   accessToken: string,
-  refreshToken: string,
+  refreshToken: string
 ) => {
   await RNSInfo.setItem(StorageItems.ACCESS_TOKEN, accessToken, options);
   await RNSInfo.setItem(StorageItems.REFRESH_TOKEN, refreshToken, options);
