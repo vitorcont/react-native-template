@@ -6,6 +6,7 @@ import {
   StackActions,
 } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 export const navigationRef: any = React.createRef();
 export const routeNameRef: any = React.createRef();
@@ -59,5 +60,7 @@ const navigationService = {
 };
 
 export const createStack = createStackNavigator;
+
+export const createBottomTab = createBottomTabNavigator;
 
 export default navigationService;
