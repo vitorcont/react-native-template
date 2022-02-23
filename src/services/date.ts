@@ -21,13 +21,3 @@ export const getTimeDiff = (date1: DateTime, date2: DateTime) => {
 
   return `${diff}d`;
 };
-
-export const RemoveSpecial = (value: string) =>
-  value.replace('{"', '').replace('"}', '');
-
-export const treatHour = (name: string) => {
-  const string = name;
-  const replace = string?.replace('{"', '').replace('"}', '');
-
-  return replace;
-};
