@@ -5,9 +5,9 @@ import { LogBox } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { connect } from 'react-redux';
 
-import tracking from './services/firebase';
-import { navigationRef, routeNameRef } from './services/navigation';
-import Navigator from './stack';
+import tracking from '@mobile/services/firebase';
+import { navigationRef, routeNameRef } from '@mobile/services/navigation';
+import Navigator from '@mobile/stack';
 
 class AppContent extends PureComponent {
   componentDidMount() {
