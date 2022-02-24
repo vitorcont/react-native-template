@@ -1,6 +1,6 @@
 import messaging from '@react-native-firebase/messaging';
 
-import NotificationAPI from '@mobile/controllers/notification';
+import NotificationAPI from '@mobile/repositories/notification';
 
 const sendPushToken = async (token: string) => {
   await NotificationAPI.sendPushToken(token);
