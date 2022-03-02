@@ -2,7 +2,7 @@ const darkTheme = {
   colors: {
     black: '#000',
     white: '#fff',
-    primary: '#2677AF',
+    primary: '#2800AA',
   },
   fonts: {
     light: 'Nunito-Light',
