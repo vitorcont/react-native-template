@@ -21,7 +21,7 @@ const useSearchBarAnimation = () => {
         },
       },
     ],
-    { useNativeDriver: true }
+    { useNativeDriver: true },
   );
 
   return {

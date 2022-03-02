@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { createStack } from '@mobile/services/navigation';
+
 import Login from './Login';
 
 const AuthStack = () => {

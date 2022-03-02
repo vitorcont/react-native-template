@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { createStack } from '@mobile/services/navigation';
 
 const ContentStack = () => {
