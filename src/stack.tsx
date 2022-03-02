@@ -2,10 +2,10 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 
 import { setHandleUnauthorizedError } from './api/axios';
-import { createStack } from './services/navigation';
-import { checkLogin, refreshToken } from './store/Auth/action';
 import AuthStack from './pages/Auth/AuthStack';
 import ContentStack from './pages/Content/ContentStack';
+import { createStack } from './services/navigation';
+import { checkLogin, refreshToken } from './store/Auth/action';
 
 const Navigator = () => {
   const dispatch = useDispatch();

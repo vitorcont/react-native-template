@@ -39,7 +39,7 @@ export const getInstance = async () => {
       }
 
       return Promise.reject();
-    }
+    },
   );
 
   return axiosInstance;

@@ -6,11 +6,13 @@ import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components/native';
 
 import AppContent from './AppContent';
+import useTheme from './hooks/useTheme';
 import i18n from './i18n';
 import store from './store';
-import theme from './theme';
 
 const App: React.FC = () => {
+  const { theme } = useTheme();
+
   useEffect(() => {
     PushNotification.createChannel(
       {
@@ -18,7 +20,7 @@ const App: React.FC = () => {
         channelName: i18n.t('NOTIFICATION_CHANNEL'),
         playSound: true,
       },
-      () => { }
+      () => { },
     );
 
     const unsubscribe = messaging().onMessage((message) => {
@@ -37,6 +39,7 @@ const App: React.FC = () => {
 
     return unsubscribe;
   }, []);
+
 
   return (
     <Provider store={store}>
